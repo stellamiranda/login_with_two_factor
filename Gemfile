@@ -20,6 +20,8 @@ gem 'sqlite3'
 
 gem 'turbolinks'
 
+gem 'twilio-ruby', '~> 3.12'
+
 gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
@@ -27,7 +29,6 @@ group :development, :test do
 	gem 'byebug'
 	
 	gem 'web-console', '~> 2.0'
-
 	gem 'spring'
 
 end
