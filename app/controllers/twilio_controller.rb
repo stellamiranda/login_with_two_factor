@@ -18,8 +18,8 @@ class TwilioController < ApplicationController
   end
 
   	def sms 
-	  	account_sid = 'AC3e23d27053072d86358e9ce88ea1be62' 
-		auth_token = '346ba335ec11288671480bcf3fc7beba' 
+	  	account_sid = Rails.application.secrets.account_sid, 
+		auth_token = Rails.application.secrets.auth_token
 		@client = Twilio::REST::Client.new account_sid, auth_token 
 		 
 		@client.account.messages.create({
